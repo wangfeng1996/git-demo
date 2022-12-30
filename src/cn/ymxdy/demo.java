@@ -29,4 +29,9 @@ public class demo {
         System.out.println(set);
     }
     int a = 3;
+
+    int b = 4;
+
+    int c= 5;
+
 }
