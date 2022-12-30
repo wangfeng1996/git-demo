@@ -1,6 +1,9 @@
 package cn.ymxdy;
 
-import java.util.HashSet;
+import cn.ymxdy.model.School;
+import cn.ymxdy.model.User;
+
+import java.util.ArrayList;
 
 /**
  * @author wf
@@ -9,23 +12,26 @@ import java.util.HashSet;
  */
 public class demo {
     public static void main(String[] args) {
-        System.out.println("hello -world");
-        System.out.println("dev");
-        HashSet<String> set1 = new HashSet<>();
-        set1.add("1");
-        set1.add("2");
-        set1.add("3");
-        set1.add("4");
+        User user = new User();
+        extracted(user);
 
-        HashSet<String> set2 = new HashSet<>();
-        set2.add("1");
-        set2.add("7");
-        set2.add("3");
-        set2.add("9");
 
-        HashSet<String> set = new HashSet<>();
-        set.addAll(set1);
-        set.addAll(set2);
-        System.out.println(set);
+    }
+
+    private static void extracted(User user) {
+        user.setName("张三");
+        user.setAge("20");
+        extracted1(user);
+    }
+
+    private static void extracted1(User user) {
+        ArrayList<School> list = getSchools();
+        user.setSchoolList(list);
+    }
+
+    private static ArrayList<School> getSchools() {
+        ArrayList<School> list = new ArrayList<>();
+        School school = new School();
+        return list;
     }
 }
