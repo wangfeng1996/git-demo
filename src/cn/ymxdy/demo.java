@@ -34,4 +34,8 @@ public class demo {
         School school = new School();
         return list;
     }
+
+    public static void main(String[] args) {
+        System.out.println("hello world");
+    }
 }
