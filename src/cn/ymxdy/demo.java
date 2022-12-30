@@ -28,8 +28,5 @@ public class demo {
         set.addAll(set2);
         System.out.println(set);
     }
-
-    public static void main(String[] args) {
-        System.out.println("hello world");
-    }
+    int a = 3;
 }
