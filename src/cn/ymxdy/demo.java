@@ -34,10 +34,4 @@ public class demo {
 
     int c= 5;
 
-    int d = 6;
-
-    int e = 7;
-
-    int f = 8;
-
 }
