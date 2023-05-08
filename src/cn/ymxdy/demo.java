@@ -36,7 +36,7 @@ public class demo {
 
     int d = 6;
 
-    int e = 7;
+
 
 
 }
